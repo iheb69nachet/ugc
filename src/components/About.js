@@ -5,23 +5,23 @@ import { Parallax } from 'react-scroll-parallax';
 
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-dark relative overflow-hidden">
+    <section id="about" className="py-20 bg-light-secondary relative overflow-hidden">
       {/* Gradient Orbs */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-neon/20 rounded-full blur-[120px]" />
-        <div className="absolute bottom-1/4 left-1/4 w-64 h-64 bg-purple-600/20 rounded-full blur-[120px]" />
+        <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-primary/30 rounded-full blur-[120px]" />
+        <div className="absolute bottom-1/4 left-1/4 w-64 h-64 bg-secondary/30 rounded-full blur-[120px]" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <Parallax translateY={[-20, 20]}>
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-            <h3 className="text-2xl font-semibold text-neon mb-2">Imen Charaabi</h3>
-            <p className="text-xl text-gray-300 mb-6">UGC Content Creator</p>
+            <h2 className="text-4xl font-bold text-accent mb-4">À Propos de Moi</h2>
+            <h3 className="text-2xl font-semibold text-accent/80 mb-2">Imen Charaabi</h3>
+            <p className="text-xl text-accent/70 mb-6">UGC Content Creator</p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6 text-gray-300">
+            <div className="space-y-6 text-accent/80">
               <p className="text-lg">
                 C'est Imen, créatrice de contenu spécialisée dans le contenu
                 généré par les utilisateurs (UGC), basée en Tunisie. Avec

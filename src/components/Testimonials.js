@@ -29,7 +29,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="py-20 bg-dark relative overflow-hidden">
+    <section className="py-20 bg-light relative overflow-hidden">
       <div className="absolute inset-0">
         <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-purple-600/20 rounded-full blur-[120px]" />
         <div className="absolute bottom-1/4 left-1/4 w-64 h-64 bg-neon/20 rounded-full blur-[120px]" />
@@ -39,14 +39,14 @@ export default function Testimonials() {
         <Parallax translateY={[-20, 20]}>
           <div className="text-center mb-16">
             <motion.h2 
-              className="text-4xl font-bold mb-4 neon-text"
+              className="text-4xl font-bold mb-4 text-accent"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
               Témoignages Clients
             </motion.h2>
-            <p className="text-gray-400">Ce que nos clients disent de notre collaboration</p>
+            <p className="text-accent/70">Ce que nos clients disent de notre collaboration</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -57,10 +57,10 @@ export default function Testimonials() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.2 }}
-                className="glass-card p-8 rounded-3xl border border-neon/20 relative group"
+                className="bg-white/80 backdrop-blur-md p-8 rounded-3xl border border-accent/10 shadow-lg relative group hover:shadow-xl transition-shadow duration-300"
               >
                 <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
-                  <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-neon">
+                  <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-primary shadow-lg">
                     <Image
                       src={testimonial.image}
                       alt={testimonial.name}
@@ -70,7 +70,7 @@ export default function Testimonials() {
                     />
                   </div>
                 </div>
-                <p className="text-gray-400 mb-6 mt-6 italic">"{testimonial.quote}"</p>
+                <p className="text-accent/80 mb-6 mt-6 italic">"{testimonial.quote}"</p>
                 <div className="text-center">
                   <h4 className="text-white font-medium">{testimonial.name}</h4>
                   <p className="text-sm text-gray-400">{testimonial.role}</p>
