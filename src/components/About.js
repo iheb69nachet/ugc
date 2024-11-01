@@ -1,48 +1,51 @@
 'use client';
-import { Parallax } from 'react-scroll-parallax';
+import AboutContent from './AboutContent';
 import Image from 'next/image';
+import { Parallax } from 'react-scroll-parallax';
 
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="about" className="py-20 bg-dark relative overflow-hidden">
+      {/* Gradient Orbs */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-neon/20 rounded-full blur-[120px]" />
+        <div className="absolute bottom-1/4 left-1/4 w-64 h-64 bg-purple-600/20 rounded-full blur-[120px]" />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <Parallax translateY={[-20, 20]}>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="relative h-[500px]">
-              <Image
-                src="/images/about-image.jpg" // Add your professional photo
-                alt="Your Name"
-                fill
-                className="object-cover rounded-2xl"
-              />
-              <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl">
-                <h3 className="text-2xl font-bold text-blue-600">5+</h3>
-                <p className="text-gray-600">Years Experience</p>
-              </div>
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
+            <h3 className="text-2xl font-semibold text-neon mb-2">Imen Charaabi</h3>
+            <p className="text-xl text-gray-300 mb-6">UGC Content Creator</p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6 text-gray-300">
+              <p className="text-lg">
+                C'est Imen, créatrice de contenu spécialisée dans le contenu
+                généré par les utilisateurs (UGC), basée en Tunisie. Avec
+                une expérience en création de contenu sur diverses
+                plateformes, je m'efforce de produire des images et des
+                vidéos qui résonnent avec les audiences et renforcent les
+                marques.
+              </p>
+              <p className="text-lg">
+                Mon approche est centrée sur la créativité,
+                l'innovation, et l'engagement authentique avec les
+                communautés en ligne. Je suis toujours à la recherche de
+                nouvelles façons d'exprimer ma vision artistique tout en
+                contribuant au succès des projets auxquels je participe.
+              </p>
             </div>
             
-            <div>
-              <h2 className="text-3xl font-bold mb-6">About Me</h2>
-              <div className="space-y-4">
-                <p className="text-gray-600">
-                  Hi! I'm [Your Name], a passionate UGC creator specializing in authentic, 
-                  engaging content that helps brands connect with their audience.
-                </p>
-                <p className="text-gray-600">
-                  With over 5 years of experience in content creation, I've worked with 
-                  brands across various industries to create compelling stories that drive engagement and conversions.
-                </p>
-                <div className="grid grid-cols-2 gap-4 mt-8">
-                  <div className="p-4 bg-white rounded-lg shadow-sm">
-                    <h4 className="font-bold text-xl text-blue-600">100+</h4>
-                    <p className="text-gray-600">Projects Completed</p>
-                  </div>
-                  <div className="p-4 bg-white rounded-lg shadow-sm">
-                    <h4 className="font-bold text-xl text-blue-600">50+</h4>
-                    <p className="text-gray-600">Happy Clients</p>
-                  </div>
-                </div>
-              </div>
+            <div className="relative h-[400px] rounded-lg overflow-hidden">
+              <Image
+                src="https://imen-charaabi.my.canva.site/media/449bd2d1926647007a752a3f04e33938.jpg" // N'oubliez pas d'ajouter votre image
+                alt="Imen Charaabi"
+                fill
+                className="object-contain rounded"
+              />
             </div>
           </div>
         </Parallax>

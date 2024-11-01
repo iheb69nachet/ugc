@@ -1,14 +1,13 @@
-'use client';
-import { ParallaxProvider } from 'react-scroll-parallax';
 import './globals.css';
+import Providers from './providers';
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <ParallaxProvider>
+        <Providers>
           {children}
-        </ParallaxProvider>
+        </Providers>
       </body>
     </html>
   );
