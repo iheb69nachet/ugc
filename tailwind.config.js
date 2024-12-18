@@ -12,14 +12,15 @@ module.exports = {
         signature: ['Great Vibes', 'cursive', ...fontFamily.sans],
       },
       colors: {
-        neon: '#00f7ff',
+        neon: '#64448B',
         dark: {
           DEFAULT: '#030014',
           card: 'rgba(17, 25, 40, 0.75)',
         },
-        primary: '#bccedc',
+        // primary: '#bccedc',
+        
         secondary: '#dcd5cd',
-        accent: '#5c4a46',
+        accent: '#64448B',
       },
       backgroundColor: {
         light: '#ffffff',

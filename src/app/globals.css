@@ -33,3 +33,32 @@ body {
   color: var(--neon-blue);
   text-shadow: 0 0 10px rgba(0, 247, 255, 0.5);
 } 
+.portfolio-items {
+  margin: 20px 0;
+}
+
+.portfolio-item img {
+  transition: transform 0.3s;
+}
+
+.portfolio-item img:hover {
+  transform: scale(1.05);
+}
+
+
+h2 {
+  color: #333;
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #0070f3;
+}
+
+a:hover {
+  text-decoration: underline;
+}

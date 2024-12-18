@@ -41,7 +41,7 @@ export default function Hero() {
           </motion.div>
           <div className="relative h-[600px] group">
             <Image
-              src="https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?q=80&w=2340&auto=format&fit=crop"
+              src="/light.jpg"
               alt="UGC Creator"
               fill
               className="object-cover rounded-3xl shadow-2xl transition-transform duration-500 group-hover:scale-105"

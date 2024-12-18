@@ -9,7 +9,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-b from-primary/20 to-secondary/20 relative overflow-hidden">
+    <section id="contact" className="py-20 bg-light relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <Parallax translateY={[-20, 20]}>
           <div className="max-w-3xl mx-auto">
